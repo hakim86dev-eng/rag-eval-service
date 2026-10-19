@@ -1,0 +1,28 @@
+services:
+  api:
+    build: .
+    image: rag-eval-service:latest
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      RAG_INDEX_PATH: /app/index/store.json
+    volumes:
+      - index:/app/index
+    restart: unless-stopped
+
+  # One-off evaluation run that fails (non-zero exit) when quality regresses:
+  #   docker compose run --rm eval
+  eval:
+    build: .
+    image: rag-eval-service:latest
+    profiles: ["eval"]
+    env_file:
+      - path: .env
+        required: false
+    command: ["rag-eval", "--min-hit-rate", "0.9", "--min-faithfulness", "0.9"]
+
+volumes:
+  index:
