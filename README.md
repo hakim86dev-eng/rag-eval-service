@@ -1,6 +1,6 @@
 # rag-eval-service
 
-[![CI](https://github.com/hakimdev86-eng/rag-eval-service/actions/workflows/ci.yml/badge.svg)](https://github.com/hakimdev86-eng/rag-eval-service/actions/workflows/ci.yml)
+[![CI](https://github.com/hakim86dev-eng/rag-eval-service/actions/workflows/ci.yml/badge.svg)](https://github.com/hakim86dev-eng/rag-eval-service/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688)
 ![License](https://img.shields.io/badge/license-MIT-green)
