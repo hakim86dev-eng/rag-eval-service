@@ -9,7 +9,7 @@ description = "FastAPI retrieval-augmented generation service with a built-in ev
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "Hakim Rashid", email = "hakimrashid207@gmail.com" }]
+authors = [{ name = "Hakim Rashid", email = "hakim86.dev@gmail.com" }]
 keywords = ["rag", "fastapi", "llm", "retrieval", "evaluation", "bm25", "embeddings"]
 classifiers = [
   "Programming Language :: Python :: 3",
